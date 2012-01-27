@@ -40,8 +40,27 @@
   //Returns true if string follows 123-456-7890 pattern, else false
   function isPhoneNumber( string )
   {
-  	if ( string.charAt(3) == "-" && string.charAt(7) == "-" && string.length == 12 )
+  	if ( string.charAt( 3 ) == "-" && string.charAt( 7 ) == "-" && string.length == 12 )
   		return true;
   	else
   		return false;
   }
+  
+  
+  //Returns true if string begins with 'http:' or 'https:'
+  function isURL( string )
+  {
+  	var substr1;
+  	var substr2;
+  	
+  	substr1 = string.substr( 0, 5 );
+  	substr2 = string.substr( 0, 6 );
+  	
+  	if ( substr1 == "http:" || substr2 == "https:" )
+  		return true;
+  	else
+  		return false;
+  }
+  
+  
+  
