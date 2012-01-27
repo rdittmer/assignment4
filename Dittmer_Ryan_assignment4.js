@@ -26,5 +26,12 @@
   	return number;
   }
   
-  
-  
+
+  //Turns a string into a number
+  function stringToNumber( string )
+  {
+  	var number;
+  	
+  	number = parseFloat( string );
+  	return number;
+  }
