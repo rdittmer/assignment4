@@ -18,5 +18,13 @@
   	return string;
   }
   
+	
+  //Formats a number to a fixed amount of decimal places	
+  function formatDecimal( number, numDecPlaces )
+  {
+  	number = number.toFixed( numDecPlaces );
+  	return number;
+  }
+  
   
   
