@@ -63,4 +63,19 @@
   }
   
   
+  //Returns true if string is in an email format, ie: aaa@bbb.ccc
+  function isEmail( string )
+  {
+  	var hasDot = false;
+  	
+  	if ( string.charAt( string.length-4 ) == '.' )
+  		hasDot = true;
+  	
+  	if ( string.indexOf( "@" ) != -1 && hasDot == true )
+  		return true;
+  	else
+  		return false;
+  }
+  
+  
   
