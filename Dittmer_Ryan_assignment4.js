@@ -35,3 +35,13 @@
   	number = parseFloat( string );
   	return number;
   }
+  
+
+  //Returns true if string follows 123-456-7890 pattern, else false
+  function isPhoneNumber( string )
+  {
+  	if ( string.charAt(3) == "-" && string.charAt(7) == "-" && string.length == 12 )
+  		return true;
+  	else
+  		return false;
+  }
